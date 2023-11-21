@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./CSS/style.css">
+  <link rel="stylesheet" href="./Icons/fontawesome-free-6.4.2-web/css/all.css">
+  <link rel="stylesheet" href="./Icons/fontawesome-free-6.4.2-web/css/all.css">
+
+  <title>Star Drive</title>
+
+</head>
+
+<body>
+  <section class="container">
+
+    <input type="checkbox" id="check">
+
+    <header>
+
+      <div class="star-container">
+        <h2>STAR DRIVE</h2>
+        <div class="star">
+          <i class="fa-solid fa-star"></i>
+        </div>
+      </div>
+
+      <div>
+        <div class="toggle">
+
+          <label class="icon" for="check">
+            <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+          </label>
+        </div>
+
+        <div class="close">
+          <label class="icon" for="check">
+            <i class="fa-solid fa-xmark" style="color: #ffffff;"></i>
+          </label>
+        </div>
+      </div>
+    </header>
+
+    <video src="./video/space_shuttle_launch (1080p)(1).mp4" muted loop autoplay></video>
+
+
+
+    <div class="overlay"></div>
+
+    <main class="text">
+      <h2>A Future for Humans</h2>
+        <h3>far and Beyond!</h3>
+        <article>
+          <p>
+            Star Drive is a visionary company dedicated to the profound exploration of space and the enhancement of
+            human life beyond Earth's boundaries. With an unwavering commitment to the forefront of space research, Star
+            Drive diligently seeks pioneering solutions and cutting-edge technologies to enable humanity to venture into
+            new frontiers. Our mission is to foster a deeper understanding of the cosmos and to pave the way for a
+            brighter future for all of humanity.
+          </p>
+        </article>
+
+        <a href="#">EXPLORE</a>
+
+    </main>
+
+
+
+    <footer class="footer-icon">
+      <ul>
+        <li> <a href="#"><i class="fa-brands fa-square-facebook" alt="facebook"></i></a></li>
+
+        <li> <a href="#"><i class="fa-brands fa-instagram" alt="instagram"></i></a></li>
+
+        <li><a href="#"><i class="fa-brands fa-square-x-twitter" alt="Twitter"></i></a></li>
+      </ul>
+
+    </footer>
+
+  </section>
+
+  <nav class="menu">
+    <ol>
+
+      <li>
+        <a href="#">
+          Home </a>
+      </li>
+
+      <li>
+        <a href="#">News</a>
+      </li>
+
+      <li>
+        <a href="#">
+          Destination</a>
+      </li>
+
+
+      <li>
+        <a href="">Blog</a>
+      </li>
+
+      <li>
+        <a href="#">
+          Contact
+        </a>
+      </li>
+
+  <nav class="menu">
+    <ol>
+
+      <li>
+        <a href="#">
+          Home </a>
+      </li>
+
+      <li>
+        <a href="#">News</a>
+      </li>
+
+      <li>
+        <a href="#">
+          Destination</a>
+      </li>
+
+
+      <li>
+        <a href="">Blog</a>
+      </li>
+
+      <li>
+        <a href="#">
+          Contact
+        </a>
+      </li>
+
+    </ol>
+  </nav>
+
+  <script>
+    const menuToggle = document.querySelector('.toggle')
+
+    const showcase = document.querySelector('.container')
+    
+    const showcase2 = document.querySelector('.close')
+    
+  
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      showcase.classList.toggle('active');
+    })
+
+    showcase2.addEventListener('click', () => {
+      menuToggle.classList.remove('active');
+      showcase.classList.remove('active');
+    })
+  </script>
+</body>
+
+</html>
